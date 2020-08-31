@@ -41,7 +41,7 @@ public class StartActivity extends AppCompatActivity {
 
     ActivityStartBinding binding;
 
-    // pick photo from gallary
+    // pick photo from phone folders
     StorageReference storageReference;
     private static final int IMAGE_REQUEST = 1;
     private Uri imageUri;
