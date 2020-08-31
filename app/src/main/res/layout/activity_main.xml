@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@android:color/white"
+            android:onClick="onViewClicked"/>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@android:color/white"
+            android:onClick="onViewClicked"/>
+
+        <TextView
+            android:id="@+id/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:layout_gravity="right"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onViewClicked"/>
+
+        <TextView
+            android:id="@+id/all_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display_all_users"
+            android:layout_gravity="right"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="onViewClicked"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/sign_in_button_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="@string/sign_in_by_google"
+                android:gravity="right|center"
+                android:drawableLeft="@drawable/common_google_signin_btn_icon_dark_normal"
+                android:paddingRight="15dp"
+                android:drawablePadding="15dp"
+                android:layout_margin="5dp"
+                android:onClick="onViewClicked"/>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btn_sign_with_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_by_facebook"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:onClick="onViewClicked"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

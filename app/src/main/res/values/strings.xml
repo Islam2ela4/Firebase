@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Firebase_Auth</string>
+    <string name="sign_in">sign in</string>
+    <string name="register">Register</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="sign_out">Sign out</string>
+    <string name="delete_account">Delete account</string>
+    <string name="sign_in_by_google">Sign In</string>
+    <string name="sign_in_by_facebook">Sign in by facebook</string>
+
+    <string name="facebook_app_id">925951064551776</string>
+    <string name="fb_login_protocol_scheme">fb925951064551776</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="send">Send</string>
+    <string name="display_all_users">Display all users</string>
+    <string name="display_name">Display name</string>
+    <string name="email">Email</string>
+
+</resources>

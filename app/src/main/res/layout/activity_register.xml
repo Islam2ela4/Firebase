@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <EditText
+            android:id="@+id/edt_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/enter_your_first_name"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edt_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/enter_your_last_name"
+            android:textColor="@android:color/black"/>
+        <!-- firebase auth take email and pass only if u want to
+        add anything else u must create database in firebase
+        and connect it to auth by user id which generated with every
+        user -->
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/enter_your_email"
+            android:textColor="@android:color/black"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/enter_your_password"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/edt_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/confirm_your_password"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_margin="40dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@android:color/white"
+            android:onClick="onClick_sign_up"/>
+
+    </LinearLayout>
+</layout>
